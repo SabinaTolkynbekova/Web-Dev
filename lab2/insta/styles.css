@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    gap: 20px;
+}
+
+.phone-container {
+    position: relative;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-back {
+    width: 100%;
+    z-index: 1;
+    size: 80%;
+}
+
+.phone-front {
+    position: absolute;
+    top: 15%; 
+    left: 50%;
+    transform: translateX(-40%);
+    width: 90%; 
+    z-index: 2;
+}
+
+.phone-bg {
+    width: 100%;
+    max-width: 380px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -30px;
+}
+
+.login-box, .register-box, .app-download {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 175px;
+    height: 51px;
+    background-repeat: no-repeat;
+    background-position: 0px -246px;
+    background-size: auto;
+    display: inline-block;
+    font-style: italic;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.login-btn {
+    width: 100%;
+    background: #0095f6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.or {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #8e8e8e;
+}
+.or-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+.or-container::before,
+.or-container::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #8e8e8e;
+    margin: 0 10px;
+}
+.or {
+    font-weight: bold;
+    color: #8e8e8e;
+    white-space: nowrap;
+}
+
+.facebook-login {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #385185;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #00376b;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.register-box a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+}
+
+.app-download img {
+    width: 120px;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 50px;
+}
