@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        function ucFirst(str){
+            if( !str ) return str;
+            return str[0].toUpperCase() + str.slice(1);
+        }
+        alert( ucFirst("john"));
+
+        //2
+        function checkSpam(){
+            let lowerStr = str.toLowerCase();
+            return lowerStr.includes("BTS plagiarists") || lowerStr.includes('Sensation');
+
+        }
+
+        alert(checkSpam(' BTS liars'));
+
+        //2
+        function truncate(str, maxlength){
+            return (str.length > maxlength) ? 
+            str.slice(0, maxlength - 1) + '...' : str;
+            
+        }
+        //3
+        function extractCurrVal(str){
+            return +str.slice(1);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        let user = {};
+        user.name = "Jungkook";
+        user.surname = "Jeon";
+        user.name = "Jimin";
+        delete user.name;
+        //2
+        function isEmpty(obj){
+            for(let key in obg){
+                return false;
+            }
+            return true;
+        }
+
+        //3
+        let salaries = {
+            Jungkook : 190,
+            Ann : 30,
+            Jimin : 40,
+        };
+        let sum = 0;
+        for(let key1 in salaries){
+            sum += salaries[key1];
+        }
+        alert(sum);
+        //4
+        function multiplyNumeric(obbj){
+            for(let key2 in obbj){
+                if ( typeof obbj[key2] == 'number'){
+                    obbj[key2] *= 2;
+                }
+            }
+        }
+    </script>
+</body>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        function makeUser(){
+            return {
+                name: "Nami";
+                ref(){
+                    return this;
+                }
+            };
+        }
+        let user = makeUser();
+        alert( user.ref().name );
+
+        //2
+        let calc = {
+            sum(){
+                return this.a + this.b;
+            },
+
+            mul(){
+                return this.a * this.b;
+            },
+            read(){
+                this.a = +prompt('a?', 0);
+                this.b = +prompt('b?', 0);
+            }
+        };
+        calc.read();
+        alert( calc.sum() );
+        alert( calc.mul() );
+
+        //3
+        let ladder = {
+            step: 0,
+            up() {
+                this.step++;
+                return this;
+            },
+            down() {
+                this.step--;
+                return this;
+            },
+            showStep(){
+                alert( this.step);
+                return this;
+            }
+        };
+
+        ladder
+            .up()
+            .up()
+            .down()
+            .showStep()
+            .down()
+            .showStep();
+    </script>
+</body>
+</html>

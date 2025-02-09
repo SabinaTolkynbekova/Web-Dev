@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+    
+</head>
+<body>
+    <nav>ToDo List</nav>
+    <div class="container">
+        <h2>ToDo List</h2>
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="New Task">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script>
+        function addTask() {
+            let taskText = document.getElementById("taskInput").value;
+            if (taskText === "") return;
+
+            let li = document.createElement("li");
+            li.className = "task-item";
+
+            let checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.onchange = function () {
+                span.classList.toggle("done");
+            };
+
+            let span = document.createElement("span");
+            span.textContent = taskText;
+
+            let deleteBtn = document.createElement("button");
+            deleteBtn.innerHTML = "&#128465;";
+            deleteBtn.onclick = function () {
+                li.remove();
+            };
+
+            li.appendChild(checkbox);
+            li.appendChild(span);
+            li.appendChild(deleteBtn);
+            document.getElementById("taskList").appendChild(li);
+
+            document.getElementById("taskInput").value = "";
+        }
+    </script>
+</body>
+</html>

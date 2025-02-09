@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "hello";
+        str.test = 5; // (*)
+        alert (str.test); // 1.underfined (no strict mode) 
+        //2.an error (no strict mode)
+        // when a property of str is accessed, a "wrapper obj" is created.
+        //in strict mode, writing into it is an error.
+        // otherwise the operation  with the property is carried on, the obj get the test property, but after that
+        // the wrapper obj dissapears, so in the last line str has no trace of the property.
+    </script>
+</body>
+</html>

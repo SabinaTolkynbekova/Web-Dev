@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pow(x,n) // no space btw arguments
+        { // figure bracket on a seperate line
+            let result=1; // no spaces before or after =
+            for(let i=0;i<n;i++) {result*=x;} // no spaces + contest should be on a new line
+            return result; 
+        }
+        let x=prompt("x?",''), n=prompt("n?",'') //it'd better to make it 2 line, also there's no space and missing ;
+        if (n<=0) // no spaces 
+        { //should be in prev line
+            alert(`Power ${n} is not supported, please enter an integer number greater than zero`);
+        }
+        else 
+        { // prev 3 lines could be written together
+            alert(pow(x,n)) // no space and missing ;
+        }
+    </script>
+</body>
+</html>

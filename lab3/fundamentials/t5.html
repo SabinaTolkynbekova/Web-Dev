@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let username=prompt('Who is there', '');
+        if(username === 'Sabi') {
+            let password = prompt('What kind of password?', '');
+            if(password === 'BTS'){
+                alert('Welcome Army!');
+            } else if (password === '' || password === null) {
+                alert('Canceled');
+            } else {
+                alert('Wrong');
+            }
+        } else if (username === '' || username === null){
+            alert('canceled');
+        } else {
+            alert("Who r u?");
+        }
+
+    </script>
+</body>
+</html>
