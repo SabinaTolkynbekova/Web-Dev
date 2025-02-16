@@ -1,0 +1,25 @@
+<h2 class="catalog-title">Каталог товаров</h2>
+
+<div class="products-container">
+  <div class="product-card" *ngFor="let product of products">
+    <div class="gallery">
+      <img [src]="product.imageUrls[0]" alt="{{ product.name }}">
+    </div>
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <p>⭐ {{ product.rating }}</p>
+    
+    <a [href]="product.link" target="_blank" class="details-button">Подробнее</a>
+
+    <div class="share-buttons">
+      <button (click)="shareOnWhatsApp('+77756553005',product.link)">
+        📱 Поделиться в WhatsApp
+      </button>
+
+      <button (click)="shareOnTelegram('odinelit', product.link)">
+        📩 Поделиться в Telegram
+      </button>
+      
+    </div>
+  </div>
+</div>
