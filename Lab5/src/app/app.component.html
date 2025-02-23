@@ -1,0 +1,28 @@
+<div class="categories">
+  <button *ngFor="let category of categories" (click)="selectCategory(category)">
+    {{ category }}
+  </button>
+</div>
+
+<div *ngIf="selectedCategory" class="products">
+  <h2>{{ selectedCategory }}</h2>
+  <div class="product-list">
+    <div *ngFor="let product of products" class="product-card">
+      <div class="product-container"> 
+        <img [src]="product.image" [alt]="product.name" class="product-image-small" />
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <a [href]="product.link" target="_blank">Посмотреть на Kaspi</a>
+ 
+        <div class="actions">
+          <button (click)="likeProduct(product.name)">❤ {{ product.likes }}</button>
+          <button (click)="removeProduct(product.name)">🗑 Удалить</button>
+        </div>
+
+        <div class="share-buttons">
+          <button (click)="shareOnWhatsApp(product.link)" class="whatsapp">WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

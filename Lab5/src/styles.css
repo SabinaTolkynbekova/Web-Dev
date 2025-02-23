@@ -1,0 +1,22 @@
+.container {
+    text-align: center;
+  }
+  
+  .categories button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .product-list {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 5px;
+    display: inline-block;
+  }
