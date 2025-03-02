@@ -1,0 +1,14 @@
+
+div{
+    background-color: rgb(186, 183, 183);
+    width: 30%;
+    height: 30vh;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+div h1{
+    color: red;
+}

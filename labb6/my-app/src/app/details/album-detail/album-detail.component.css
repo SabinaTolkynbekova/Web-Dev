@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+fieldset {
+	text-align: left;
+	border-style: none;
+	background-color: #333;
+	padding: 10px;
+
+}
+
+input {
+	width: calc(100% - 125px);
+	padding: 5px;
+	margin-right: 10px;
+	height: 20px;
+	border-style: none;
+}
+
+.save-button {
+	width: 100px;
+	height: 30px;
+	background-color: #61b15a;
+	font-size: 15px;
+	color: white;
+	border: none;
+}
+
+.photos-link {
+	color: white;
+	padding: 10px;
+	margin-top: 30px;
+	text-decoration: none;
+	background-color: #4f98f1;
+}
+
+a:visited {
+	color: white;
+}
+
+.back-btn{
+    color: white;
+	padding: 5px;
+	margin-top: 30px;
+	text-decoration: none;
+	background-color: #000000;
+    border: none;
+
+}

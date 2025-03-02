@@ -1,0 +1,28 @@
+<body>
+    <header>
+        <h1>Album Lists</h1>
+    </header>
+  
+    <fieldset>
+        <input type="text" [(ngModel)]="newAlbum" placeholder="Enter name of new album" class="todo_input" />
+        <button (click)="addAlbum()" class="add-btn">+</button>
+    </fieldset>
+
+    
+
+    <ul *ngIf="loaded" class="albums-list">
+        <li *ngFor="let album of albums" class="album">
+            <div class="card">
+                <a [routerLink]="['/albums', album.id]" class="detail-link">{{album.title}}</a>
+                
+                <div class="delete">
+                    <img (click)="deleteAlbum(album.id)" class="del-btn" src="https://cdn4.iconfinder.com/data/icons/essentials-72/24/013_-_Trash-256.png" width="30">
+                
+                </div>
+            </div>
+        </li>
+    </ul>
+    <p *ngIf="!loaded">Loading albums list...</p>
+    
+
+</body>

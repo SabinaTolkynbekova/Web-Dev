@@ -1,0 +1,13 @@
+<div class="container">
+  <nav>
+    <ul class="navbar">
+      <li [routerLinkActive]="'active'"><a routerLink="/home">Home</a></li>
+      <li [routerLinkActive]="'active'"><a routerLink="/about">About Us</a></li>
+      <li [routerLinkActive]="'active'"><a routerLink="/albums">Albums</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <router-outlet></router-outlet>
+  </div>
+</div>

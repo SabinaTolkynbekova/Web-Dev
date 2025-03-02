@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+header{
+    min-height: 15vh;
+}
+
+
+header,fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+fieldset input, fieldset button{
+    padding: 0.4rem;
+    border: none;
+    font-size: 1.6rem;
+    background: white;
+}
+fieldset button{
+    color: #c065c0;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+fieldset button:hover{
+    background: #c065c0;
+    color: white;
+}
+
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e9c6eb;
+    padding: 25px 25px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+

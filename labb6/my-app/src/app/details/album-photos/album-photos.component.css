@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.back-btn{
+    color: white;
+	padding: 5px;
+	margin-top: 30px;
+	text-decoration: none;
+	background-color: #04b6c6;
+    border: none;
+
+}
+
+
+
+.photo{
+    display: inline-block;
+    margin: 10px;
+}
+
+ul{
+    list-style: none;
+}
