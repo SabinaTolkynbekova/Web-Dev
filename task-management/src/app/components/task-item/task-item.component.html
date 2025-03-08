@@ -1,0 +1,10 @@
+<div>
+    <h3>{{ task.title }}</h3>
+    <p>{{ task.description }}</p>
+    <p>Status: {{ task.status }}</p>
+    <button (click)="markAsCompleted()" [disabled]="task.status === 'Completed'">
+      Mark as Completed
+    </button>
+    <a [routerLink]="['/task', task.id]">View Details</a>
+  </div>
+  

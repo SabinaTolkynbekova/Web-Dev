@@ -1,0 +1,9 @@
+<div>
+    <h2>All Tasks</h2>
+    <app-task-item
+      *ngFor="let t of tasks"
+      [task]="t"
+      (taskCompleted)="onTaskCompleted()"
+    ></app-task-item>
+  </div>
+  
