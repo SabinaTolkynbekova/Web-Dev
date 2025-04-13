@@ -1,0 +1,15 @@
+<div *ngIf="companies.length === 0">
+  <p>No companies found.</p>
+</div>
+
+<div *ngFor="let company of companies">
+  <h3>{{ company.name }}</h3>
+  <p>{{ company.description }}</p>
+  <ul>
+    <li *ngFor="let vacancy of company.vacancies">
+      <h4>{{ vacancy.title }}</h4>
+      <p>{{ vacancy.description }}</p>
+    </li>
+  </ul>
+</div>
+

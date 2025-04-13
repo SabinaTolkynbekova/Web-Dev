@@ -1,0 +1,11 @@
+
+<div>
+    <h2>Vacancies</h2>
+    <ul>
+      <li *ngFor="let vacancy of vacancies">
+        {{ vacancy.title }}
+      </li>
+    </ul>
+    <p *ngIf="!companyId">Choose company</p>
+    <p *ngIf="companyId && vacancies.length === 0">There is no vacancies in this company</p>
+  </div>
