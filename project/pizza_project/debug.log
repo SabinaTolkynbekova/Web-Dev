@@ -1,0 +1,125 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Watching for file changes with StatReloader
+Internal Server Error: /api/pizzas/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\request.py", line 422, in __getattr__
+    return getattr(_request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'build_absolute_url'. Did you mean: 'build_absolute_uri'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+  File "C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_app\serializers.py", line 14, in get_image
+    return request.build_absolute_url(obj.image.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\Web-Dev\project\env\Lib\site-packages\rest_framework\request.py", line 424, in __getattr__
+    raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{attr}'")
+AttributeError: 'Request' object has no attribute 'build_absolute_url'
+C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_app\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_app\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Not Found: /
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /api/admin
+C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /api/admin
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\Web-Dev\project\pizza_project\pizza_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /
+Watching for file changes with StatReloader
